@@ -1,0 +1,30 @@
+What is it?
+===========
+A greasemonkey script that adds a button to the egg.com allowing you to download your recent transactions and statements in the OFX format.
+
+
+Installation
+============
+# Install Firefox (http://getfirefox.com)
+# Install Greasemonkey (http://github.com/chrisroos/egg2ofx-greasemonkey)
+# Install this script (http://userscripts.org/scripts/show/62188)
+
+*IMPORTANT* I very strongly advise you to use this in combination with your own local copy of the egg2ofx-server (http://github.com/chrisroos/egg2ofx-server).
+
+
+Usage
+=====
+If you really truly understand the risks then you can use it as is, i.e. install it, visit your egg account and hit the download button.
+If you want to use it with a local copy of the egg2ofx-server then you'll need to create a new firefox preference.
+
+# Enter about:config in the location bar
+# Right click somewhere on the list of existing preferences and select 'New > String'
+# Enter 'greasemonkey.scriptvals.http://chrisroos.co.uk//Egg to Ofx.egg2ofxService' (without the quotes) as the preference name
+# Enter the URL of your local egg2ofx-server as the value, e.g. http://egg2ofx.local
+
+You'll be prompted with a warning when you click the Download as OFX button that includes the url of the server its going to send the data to.
+
+
+Contact
+=======
+Email me with any questions or problems at chris@seagul.co.uk.
